@@ -19,3 +19,12 @@ godinanaragjanje = 1982; // BAD CASE!
 // "..."
 // '...'
 // `...`
+
+
+
+
+
+
+console.log(a + ' ' + y);
+
+console.log(ime + ' ' + prezime);
