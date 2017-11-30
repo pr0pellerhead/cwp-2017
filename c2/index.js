@@ -182,10 +182,49 @@ zdravo('Bojanovski');
 zdravo('Perovski');
 
 
+function c2f(c){
+	var f = c * 1.8 + 32;
+	console.log(f);
+}
+
+function f2c(f){
+	var c = (f - 32) / 1.8;
+	console.log(c);
+}
+
+function temp(t, ct){ // temperature, conversion type
+	switch(ct){
+		case 'c2f':
+			c2f(t);
+		break;
+		case 'f2c':
+			f2c(t);
+		break;
+	}
+}
+
+
 c2f(18); // X celziusovi stepeni vo farenhajtovi stepeni
 f2c(120); // X farenhajtovi stepeni vo celziusovi stepeni
 
-temp(12, 'c2f'); // X celziusovi stepeni vo farenhajtovi stepeni
-temp(102, 'f2c'); // X farenhajtovi stepeni vo celziusovi stepeni
+temp(18, 'c2f'); // X celziusovi stepeni vo farenhajtovi stepeni
+temp(120, 'f2c'); // X farenhajtovi stepeni vo celziusovi stepeni
+
+
+
+function ubavoIme(ime){
+	switch(ime.length % 2){
+		case 0:
+			console.log('Ubavo ime');
+		break;
+		case 1:
+			console.log('Neubavo ime');
+		break;
+	}
+}
+
+ubavoIme('Bojan');
+
+
 
 
